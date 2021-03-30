@@ -1,4 +1,6 @@
 language: generic
+os: linux
+dist: xenial
 services:
   - docker
 
@@ -13,7 +15,7 @@ deploy:
   region: "us-east-2"
   app: docker-react
   env: "Dockerreact-env"
-  bucket_name: "elasticbeanstalk-us-east-2-611006255447"
+  bucket: "elasticbeanstalk-us-east-2-611006255447"
   bucket_path: "docker-react"
   on:
     branch: master
